@@ -2,7 +2,7 @@ STRUTTURA
 src/
  ┣ app/
  ┃ ┣ components/
- ┃ ┃ ┣ homepage/         ← qui componi tutta la pagina
+ ┃ ┃ ┣ homepage/
  ┃ ┃ ┣ header/
  ┃ ┃ ┣ navbar/
  ┃ ┃ ┣ detail/

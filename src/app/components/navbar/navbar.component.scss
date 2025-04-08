@@ -1,0 +1,26 @@
+.navbar-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.digimon-slots {
+	display: flex;
+	gap: 1rem;
+}
+
+.digimon-card {
+	cursor: pointer;
+	text-align: center;
+	transition: transform 0.2s ease;
+}
+
+.digimon-card:hover {
+	transform: scale(1.05);
+}
+
+.digimon-card img {
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+}

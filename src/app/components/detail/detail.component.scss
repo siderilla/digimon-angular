@@ -1,0 +1,16 @@
+.detail-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.digimon-image {
+	width: 200px;
+	height: auto;
+	object-fit: contain;
+}
+
+.digimon-info {
+	max-width: 600px;
+}

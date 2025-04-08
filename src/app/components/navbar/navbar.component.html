@@ -1,0 +1,12 @@
+<div class="navbar-container">
+	<button (click)="prevPage()">←</button>
+
+	<div class="digimon-slots">
+		<div class="digimon-card" *ngFor="let digimon of visibleDigimon" (click)="onDigimonClick(digimon.id)">
+			<img [src]="digimon.images[0].href" alt="{{ digimon.name }}" />
+			<p>{{ digimon.name }}</p>
+		</div>
+	</div>
+
+	<button (click)="nextPage()">→</button>
+</div>

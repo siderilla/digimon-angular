@@ -1,0 +1,18 @@
+<div *ngIf="digimon() as d" class="detail-container">
+	<img [src]="d.images[0].href" alt="{{ d.name }}" class="digimon-image" />
+
+	<div class="digimon-info">
+		<h2>{{ d.name }}</h2>
+		<p>{{ description }}</p>
+
+		<ul>
+			<li><strong>Level:</strong> {{ d.levels[0].level }}</li>
+			<li><strong>Type:</strong> {{ d.types[0].type }}</li>
+			<li><strong>Attribute:</strong> {{ d.attributes[0].attribute }}</li>
+		</ul>
+	</div>
+</div>
+
+<div *ngIf="!digimon()">
+	<p>Select a Digimon to view its details.</p>
+</div>

@@ -1,7 +1,15 @@
-<!-- <app-header /> -->
+<!-- test output component -->
+
+<h2>Output Test</h2>
+<app-header (clicked)="onChildClicked()"></app-header>
+<p *ngIf="messageVisible">✅ Il figlio ha emesso l’evento!</p>
+
 <app-navbar />
 <app-detail />
-<!-- <app-footer /> -->
+<!-- test input component -->
+<app-footer [widthPx]="300"></app-footer>
+<app-footer [widthPx]="150"></app-footer>
+
 
 
 <router-outlet />

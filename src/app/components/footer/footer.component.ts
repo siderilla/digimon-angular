@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+	widthPx = input('', { // inizializza il valore come stringa
+		transform: (val: number) => `${val}px` // transform function number 200 in stringa 200px
+	});
 }
